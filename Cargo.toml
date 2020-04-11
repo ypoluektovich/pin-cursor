@@ -1,0 +1,22 @@
+[package]
+name = "pin-cursor"
+version = "1.0.0"
+authors = ["ypoluektovich"]
+edition = "2018"
+description = "A simple !Unpin I/O backend for async-std"
+readme = "README.md"
+repository = "https://github.com/ypoluektovich/pin-cursor"
+license = "MIT OR Apache-2.0 OR MPL-2.0"
+keywords = ["async", "async-std", "pin", "unpin"]
+categories = ["asynchronous", "development-tools::testing"]
+
+[features]
+default = []
+
+[dependencies]
+async-std = "1.5.0"
+pin-project-lite = "0.1.4"
+stackpin = { version = "0.0.2", optional = true }
+
+[dev-dependencies]
+static_assertions = "1.1.0"
